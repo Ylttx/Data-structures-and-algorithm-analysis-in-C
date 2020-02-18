@@ -1,8 +1,9 @@
 #include "list.h"
+#include "common.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-List MakeEmpty( List L )
+List MakeEmptyList( List L )
 {
     if (L != NULL)
         DeleteList(L);
@@ -13,7 +14,7 @@ List MakeEmpty( List L )
     return L;
 }
 
-int IsEmpty( List L )
+int IsEmptyList( List L )
 {
     return L->Next == NULL;
 }
@@ -65,7 +66,7 @@ void Insert( ElementType X, List L, Position P )
     
     TmpCell = malloc(sizeof(struct Node));
     if (TmpCell == NULL)
-       return;
+        FatalError("Out of space!!!");
 
     TmpCell->Element = X;
     TmpCell->Next = P->Next;

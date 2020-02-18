@@ -8,8 +8,8 @@ void TestList()
     List list1, list2;
     Position p1, p2; 
 
-    list1 = MakeEmpty(NULL);
-    list2 = MakeEmpty(NULL);
+    list1 = MakeEmptyList(NULL);
+    list2 = MakeEmptyList(NULL);
     p1 = Header(list1);
     p2 = Header(list2);
 
@@ -54,7 +54,7 @@ void TestList()
 void PrintElement( const List L )
 {
     Position P = Header(L);
-    if (IsEmpty(L))
+    if (IsEmptyList(L))
         printf("Empty list!\n");
     else
     {
@@ -129,7 +129,7 @@ List Intersect(List L1, List L2)
     List L;
     Position P, P1, P2;
 
-    L = MakeEmpty(NULL);
+    L = MakeEmptyList(NULL);
     P = Header(L);
     P1 = First(L1);
     P2 = First(L2);
@@ -158,7 +158,7 @@ List Merge(List L1, List L2)
     List L;
     Position P, P1, P2;
 
-    L = MakeEmpty(NULL);
+    L = MakeEmptyList(NULL);
     P = Header(L);
     P1 = First(L1);
     P2 = First(L2);
@@ -190,7 +190,7 @@ List Merge(List L1, List L2)
 /* 反转链表: O(n) */
 void ReverseList( List L )
 {
-    if (IsEmpty(L) || L->Next->Next == NULL)
+    if (IsEmptyList(L) || L->Next->Next == NULL)
         return;
 
     Position P0, P, P1;
