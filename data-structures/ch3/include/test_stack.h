@@ -4,4 +4,5 @@
 
 void TestStack( void );
 
+int IsSignBalanced( Stack S ); // 3.18.b
 #endif

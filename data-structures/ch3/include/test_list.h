@@ -11,6 +11,6 @@ void SwapNextDouble(Position P, List L); // 3.3.b
 List Intersect(List L1, List L2); // 3.4
 List Merge(List L1, List L2); // 3.5
 
-void ReverseList( List L ); // 反转链表
+void ReverseList( List L ); // 3.12.a 反转链表
 
 #endif

@@ -1,9 +1,10 @@
 #ifndef _Stack_H
 #define _Stack_H
 
-#define StackArray 1
+#include "common.h"
 
-typedef int ElementType;
+//#define StackArray 1
+
 #define EmptyTOS ( -1 )
 #define MinStackSize ( 5 )
 

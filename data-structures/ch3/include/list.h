@@ -1,11 +1,12 @@
 #ifndef _List_H
 #define _List_H
 
+#include "common.h"
+
 struct Node;
 typedef struct Node *PtrToNode;
 typedef PtrToNode List;
 typedef PtrToNode Position;
-typedef int ElementType;
 
 struct Node
 {

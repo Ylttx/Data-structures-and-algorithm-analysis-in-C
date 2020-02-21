@@ -1,11 +1,11 @@
 #ifndef _Common_H
 #define _Common_H
 
-#define FatalError(X) {\
-    printf("%s", X);\
-    return;}
+#define FatalError(Str) fprintf(stderr, "%s\n", Str), exit(1)
 
-#define Error(X) {\
-    printf("%s", X);}
+#define Error(Str) {\
+    printf("%s", Str);}
+
+typedef char ElementType;
 
 #endif
