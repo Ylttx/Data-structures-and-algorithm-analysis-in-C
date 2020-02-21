@@ -7,6 +7,12 @@ typedef PtrToNode List;
 typedef PtrToNode Position;
 typedef int ElementType;
 
+struct Node
+{
+    ElementType Element;
+    Position    Next;
+};
+
 List MakeEmptyList( List L );
 int IsEmptyList( List L );
 int IsLast( Position P, List L );
@@ -19,11 +25,5 @@ Position Header( List L );
 Position First( List L );
 Position Advance( Position P );
 ElementType Retrieve( Position P );
-
-struct Node
-{
-    ElementType Element;
-    Position    Next;
-};
 
 #endif /* _List_H */
