@@ -24,3 +24,4 @@ file(GLOB LIB_SOURCES "lib/*.c")
 file(GLOB TEST_SOURCES "test/*.c")
 
 add_executable(out ${LIB_SOURCES} ${MAIN_SOURCES} ${TEST_SOURCES})
+#add_executable(test )

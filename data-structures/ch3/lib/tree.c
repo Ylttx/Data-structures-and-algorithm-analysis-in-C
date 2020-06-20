@@ -33,6 +33,7 @@ TreePositon FindTree( ElementType X, SearchTree T )
         return T;
 }
 
+/* 对二叉查找树的递归实现 */
 TreePositon FindMinTree( SearchTree T)
 {
     if (T == NULL)
@@ -43,6 +44,7 @@ TreePositon FindMinTree( SearchTree T)
         return FindMinTree(T->Left);
 }
 
+/* 对二叉查找树的非递归实现 */
 TreePositon FindMaxTree( SearchTree T)
 {
     if (T != NULL)
@@ -98,7 +100,7 @@ SearchTree DeleteTree( ElementType X, SearchTree T )
             T = T->Left;
         free(TmpCell);
     }
-
+    
     return T;
 }
 

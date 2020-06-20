@@ -1,3 +1,0 @@
-/Users/dllttx/Documents/Data-structures-and-algorithm-analysis-in-C/data-structures/ch3/build/CMakeFiles/rebuild_cache.dir
-/Users/dllttx/Documents/Data-structures-and-algorithm-analysis-in-C/data-structures/ch3/build/CMakeFiles/edit_cache.dir
-/Users/dllttx/Documents/Data-structures-and-algorithm-analysis-in-C/data-structures/ch3/build/CMakeFiles/out.dir
